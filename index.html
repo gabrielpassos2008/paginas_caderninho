@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Caderninho</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- MENU -->
+    <div class="menu">
+        <button type="button" class="ativo">Cadastrar a divida</button>
+        <button>Cadastrar cliente</button>
+        <button>Perfil</button>
+    </div>
+
+    <div class="conteudo">
+
+        <!-- LADO ESQUERDO -->
+        <div class="resumo">
+
+            <h2 class="tituloForm">Resumo divida:</h2>
+
+            <div class="card">
+                <i class="bi bi-cash-stack"></i>
+                <div>
+                    <p>Total em dívidas</p>
+                    <h3>R$ 1200,00</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="bi bi-check-circle verde"></i>
+                <div>
+                    <p>Total pago no mês</p>
+                    <h3>R$ 3.200,00</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="bi bi-people azul"></i>
+                <div>
+                    <p>Clientes devendo</p>
+                    <h3>23 clientes</h3>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- FORMULARIO -->
+        <div class="formDividido">
+
+            <h2 class="tituloForm">Cadastre a divida</h2>
+
+            <form>
+
+                <label>Nome do devedor:</label>
+                <input type="text">
+
+                <label>Valor:</label>
+                <input type="text">
+
+                <label>Data Vencimento:</label>
+                <input type="date">
+
+                <label>Data Compra:</label>
+                <input type="date">
+                <button class="button" type="submit">Cadastrar</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
