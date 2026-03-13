@@ -19,7 +19,6 @@
         <a  href="cadastrarCliente.html">Cadastrar cliente</a>
         <a  href="perfil.html">Perfil</a>
     </div>
-
     <div class="conteudo">
 
         <!-- LADO ESQUERDO -->
@@ -53,27 +52,33 @@
 
         </div>
 
+        <div class="area-pesquisa">
 
-        <!-- FORMULARIO -->
-        <div class="formDividido">
+            <div class="topo-pesquisa">
+                <input type="text" placeholder="Pesquisar cliente..." class="input-pesquisa">
+                <button class="btn-pesquisar">Pesquisar</button>
+            </div>
+        
+            <div class="lista-clientes">
+        
+                <div class="card-cliente">
 
-            <h2 class="tituloForm">Registre uma nova dívida para: roberto</h2>
-
-            <form>
-
-                <input type="hidden">
-
-                <label>Valor:</label>
-                <input type="text">
-
-                <label>Data Compra:</label>
-                <input type="date">
-                <button class="button" type="submit">Salvar</button>
-
-            </form>
-
+                    <div class="info-cliente">
+                        <span class="nome">João Silva</span>
+                        <span class="valor">R$120,00</span>
+                    </div>
+                
+                    <div class="acoes">
+                        <a href="abaterdivida.html" class="btn">Abater dívida</a>
+                        <a href="index.html" class="btn">Adicionar débito</a>
+                    </div>
+                
+                </div>
+            </div>
+        
         </div>
 
+        
     </div>
 
 </div>

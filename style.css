@@ -37,11 +37,13 @@ body{
     margin-bottom:4%;
 }
 
-.menu button{
+.menu a{
     padding:10px 25px;
     border:none;
+    text-decoration: none;
     border-radius:20px;
     background:#d9d9d9;
+    color: black;
     font-size:16px;
     cursor:pointer;
     box-shadow:0 10px 25px rgba(0, 0, 0, 0.24);
@@ -55,10 +57,10 @@ body{
 /* layout principal */
 
 .conteudo{
-    gap:40px;
     display:flex;
+    gap:40px;
     justify-content:center;
-    align-items:center
+    align-items:flex-start;
 }
 
 /* resumo */
@@ -119,6 +121,9 @@ body{
     box-shadow:0 10px 25px rgba(0, 0, 0, 0.384);
     margin: auto;
 }
+.formCentralizado .btn{
+    margin-top: 10px;
+}
 
 .tituloForm{
     text-align:center;
@@ -152,6 +157,101 @@ input{
     cursor:pointer;
 }
 
-button:hover{
+.button:hover{
     background:#e25c19;
+}
+
+/* área da pesquisa */
+
+.area-pesquisa{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+/* topo da pesquisa */
+
+.topo-pesquisa{
+    display:flex;
+    gap:10px;
+}
+
+.input-pesquisa{
+    flex:1;
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #aaa;
+    background:#e8e8e8;
+}
+
+/* botões */
+
+.btn,
+.btn-pesquisar{
+    background:#f26a2e;
+    border:none;
+    text-decoration: none;
+    padding:10px 16px;
+    border-radius:10px;
+    color:white;
+    cursor:pointer;
+    transition:0.2s;
+    text-align: center;
+}
+
+.btn:hover,
+.btn-pesquisar:hover{
+    background:#e55d23;
+}
+
+/* lista de clientes */
+
+.lista-clientes{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    
+}
+
+/* card do cliente */
+
+.card-cliente{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+    background:#e8e8e8;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.2);
+
+    transition:0.2s;
+}
+
+.card-cliente:hover{
+    transform:scale(1.02);
+}
+
+/* informações do cliente */
+
+.info-cliente{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+
+.nome{
+    font-size:18px;
+}
+
+.valor{
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* ações */
+
+.acoes{
+    display:flex;
+    gap:15px;
 }
