@@ -15,6 +15,15 @@ body{
 
 /* container principal */
 
+.CardLogin{
+    width:500px;
+    background:#e8e8e8;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0, 0, 0, 0.384);
+    margin:150px auto;
+}
+
 .container{
     width:60%;
     margin:auto;
