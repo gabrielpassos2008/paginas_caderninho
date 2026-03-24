@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <a  th:href="@{/adm/pesquisar-usuario}">Cadastrar a divida</a>
+            <a  th:href="@{/adm/cadastrar-cliente}" class="ativo" >Cadastrar cliente</a>
+            <a  th:href="@{/adm/perfil}">Perfil</a>
+        </div>
+
+        <div class="formCentralizado">
+
+            <h2 class="tituloForm">Cadastrar cliente</h2>
+
+            <form method="post" th:action="@{/adm/cadastrar-cliente}">
+
+                <label>Nome:</label>
+                <input type="text" name="nome">
+
+                <label>Apelido:</label>
+                <input type="text" name="apelido">
+
+                <label>Telefone:</label>
+                <input type="text" name="telefone">
+
+                <label >Email:</label>
+                <input type="text" name="email" >
+
+                <label>Senha:</label>
+                <input type="password" name="senha">
+                <button class="button" type="submit">Cadastrar</button>
+
+            </form>
+
+        </div>
+</div>
+</body>
+</html>

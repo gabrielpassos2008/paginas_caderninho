@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>Caderninho</title>
-<link rel="stylesheet" href="style.css">
-
+<link rel="stylesheet" href="/style.css">
 <!-- Bootstrap Icons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
@@ -15,10 +14,11 @@
 
     <!-- MENU -->
     <div class="menu">
-        <a class="ativo" href="pesquisar.html">Cadastrar a divida</a>
-        <a  href="cadastrarCliente.html">Cadastrar cliente</a>
-        <a  href="perfil.html">Perfil</a>
+        <a  th:href="@{/adm/pesquisar-usuario}" class="ativo" >Cadastrar a divida</a>
+        <a  th:href="@{/adm/cadastrar-cliente}">Cadastrar cliente</a>
+        <a  th:href="@{/adm/perfil}">Perfil</a>
     </div>
+
     <div class="conteudo">
 
         <!-- LADO ESQUERDO -->
@@ -52,33 +52,20 @@
 
         </div>
 
-        <div class="area-pesquisa">
 
-            <div class="topo-pesquisa">
-                <input type="text" placeholder="Pesquisar cliente..." class="input-pesquisa">
-                <button class="btn-pesquisar">Pesquisar</button>
-            </div>
-        
-            <div class="lista-clientes">
-        
-                <div class="card-cliente">
+        <!-- FORMULARIO -->
+        <div class="formDividido" >
 
-                    <div class="info-cliente">
-                        <span class="nome">João Silva</span>
-                        <span class="valor">R$120,00</span>
-                    </div>
-                
-                    <div class="acoes">
-                        <a href="abaterdivida.html" class="btn">Abater dívida</a>
-                        <a href="index.html" class="btn">Adicionar débito</a>
-                    </div>
-                
-                </div>
-            </div>
-        
+            <h2 class="tituloForm">Abater uma divida para: <span th:text="${cliente.nome}"></span></h2>
+
+            <form method="post" th:action="@{'/adm/abater-divida/'+${cliente.id}}">
+                <label>Valor:</label>
+                <input type="number" name="valor">
+                <button class="button" type="submit">Salvar</button>
+            </form>
+
         </div>
 
-        
     </div>
 
 </div>
