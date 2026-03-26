@@ -18,7 +18,14 @@
 
 
         <div class="lista-clientes">
-            <h1 class="tituloForm">historico do: <span class="nome-cliente">Roberto</span></h1>
+            <div class="container-boas-vindas">
+                <h1 class="titulo-boas-vindas">
+                    Histórico de <span>Gabriel</span> 📜
+                </h1>
+                <p class="subtitulo-boas-vindas">
+                    Veja todas as movimentações financeiras
+                </p>
+            </div>
             <div class="card-historico" th:each="cliente : ${clientes}">
                 <div class="info-cliente">
                     <span class="valor">R$ 100,00</span>
